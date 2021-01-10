@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B6EBECE25A5D2B800CC9506 /* LayerDrawingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EBECD25A5D2B800CC9506 /* LayerDrawingFunctions.swift */; };
+		8B98B5E925A48E2800F3AA86 /* ParabolaCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98B5E825A48E2800F3AA86 /* ParabolaCalculations.swift */; };
+		8BC0BEA625A1E27C007A8D4C /* TennisBallDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0BEA525A1E27C007A8D4C /* TennisBallDetector.mlmodel */; };
+		8BCD9C36259E2D2A0057B449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD9C35259E2D2A0057B449 /* AppDelegate.swift */; };
+		8BCD9C38259E2D2A0057B449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD9C37259E2D2A0057B449 /* ViewController.swift */; };
+		8BCD9C3A259E2D2C0057B449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCD9C39259E2D2C0057B449 /* Assets.xcassets */; };
+		8BCD9C3D259E2D2C0057B449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCD9C3B259E2D2C0057B449 /* Main.storyboard */; };
+		8BCD9C49259E2D2D0057B449 /* BallTrackerMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD9C48259E2D2D0057B449 /* BallTrackerMacOSTests.swift */; };
+		8BCD9C54259E2D2D0057B449 /* BallTrackerMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD9C53259E2D2D0057B449 /* BallTrackerMacOSUITests.swift */; };
+		8BCD9C66259E2D7F0057B449 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8BCD9C65259E2D7F0057B449 /* SnapKit */; };
+		8BCD9C6B259E30060057B449 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD9C6A259E30060057B449 /* VisionObjectRecognitionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BCD9C45259E2D2D0057B449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BCD9C2A259E2D2A0057B449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BCD9C31259E2D2A0057B449;
+			remoteInfo = BallTrackerMacOS;
+		};
+		8BCD9C50259E2D2D0057B449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BCD9C2A259E2D2A0057B449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BCD9C31259E2D2A0057B449;
+			remoteInfo = BallTrackerMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B6EBECD25A5D2B800CC9506 /* LayerDrawingFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerDrawingFunctions.swift; sourceTree = "<group>"; };
+		8B98B5E825A48E2800F3AA86 /* ParabolaCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParabolaCalculations.swift; sourceTree = "<group>"; };
+		8BC0BEA525A1E27C007A8D4C /* TennisBallDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TennisBallDetector.mlmodel; sourceTree = "<group>"; };
+		8BCD9C32259E2D2A0057B449 /* BallTrackerMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallTrackerMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCD9C35259E2D2A0057B449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BCD9C37259E2D2A0057B449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BCD9C39259E2D2C0057B449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BCD9C3C259E2D2C0057B449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BCD9C3E259E2D2C0057B449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCD9C3F259E2D2C0057B449 /* BallTrackerMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BallTrackerMacOS.entitlements; sourceTree = "<group>"; };
+		8BCD9C44259E2D2D0057B449 /* BallTrackerMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallTrackerMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCD9C48259E2D2D0057B449 /* BallTrackerMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallTrackerMacOSTests.swift; sourceTree = "<group>"; };
+		8BCD9C4A259E2D2D0057B449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCD9C4F259E2D2D0057B449 /* BallTrackerMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallTrackerMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCD9C53259E2D2D0057B449 /* BallTrackerMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallTrackerMacOSUITests.swift; sourceTree = "<group>"; };
+		8BCD9C55259E2D2D0057B449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCD9C6A259E30060057B449 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BCD9C2F259E2D2A0057B449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCD9C66259E2D7F0057B449 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCD9C41259E2D2D0057B449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCD9C4C259E2D2D0057B449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BCD9C29259E2D2A0057B449 = {
+			isa = PBXGroup;
+			children = (
+				8BCD9C34259E2D2A0057B449 /* BallTrackerMacOS */,
+				8BCD9C47259E2D2D0057B449 /* BallTrackerMacOSTests */,
+				8BCD9C52259E2D2D0057B449 /* BallTrackerMacOSUITests */,
+				8BCD9C33259E2D2A0057B449 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BCD9C33259E2D2A0057B449 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BCD9C32259E2D2A0057B449 /* BallTrackerMacOS.app */,
+				8BCD9C44259E2D2D0057B449 /* BallTrackerMacOSTests.xctest */,
+				8BCD9C4F259E2D2D0057B449 /* BallTrackerMacOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BCD9C34259E2D2A0057B449 /* BallTrackerMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				8BCD9C35259E2D2A0057B449 /* AppDelegate.swift */,
+				8BCD9C37259E2D2A0057B449 /* ViewController.swift */,
+				8BCD9C39259E2D2C0057B449 /* Assets.xcassets */,
+				8BCD9C3B259E2D2C0057B449 /* Main.storyboard */,
+				8BCD9C3E259E2D2C0057B449 /* Info.plist */,
+				8BC0BEA525A1E27C007A8D4C /* TennisBallDetector.mlmodel */,
+				8BCD9C3F259E2D2C0057B449 /* BallTrackerMacOS.entitlements */,
+				8B98B5E825A48E2800F3AA86 /* ParabolaCalculations.swift */,
+				8B6EBECD25A5D2B800CC9506 /* LayerDrawingFunctions.swift */,
+				8BCD9C6A259E30060057B449 /* VisionObjectRecognitionViewController.swift */,
+			);
+			path = BallTrackerMacOS;
+			sourceTree = "<group>";
+		};
+		8BCD9C47259E2D2D0057B449 /* BallTrackerMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BCD9C48259E2D2D0057B449 /* BallTrackerMacOSTests.swift */,
+				8BCD9C4A259E2D2D0057B449 /* Info.plist */,
+			);
+			path = BallTrackerMacOSTests;
+			sourceTree = "<group>";
+		};
+		8BCD9C52259E2D2D0057B449 /* BallTrackerMacOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BCD9C53259E2D2D0057B449 /* BallTrackerMacOSUITests.swift */,
+				8BCD9C55259E2D2D0057B449 /* Info.plist */,
+			);
+			path = BallTrackerMacOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BCD9C31259E2D2A0057B449 /* BallTrackerMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCD9C58259E2D2D0057B449 /* Build configuration list for PBXNativeTarget "BallTrackerMacOS" */;
+			buildPhases = (
+				8BCD9C2E259E2D2A0057B449 /* Sources */,
+				8BCD9C2F259E2D2A0057B449 /* Frameworks */,
+				8BCD9C30259E2D2A0057B449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BallTrackerMacOS;
+			packageProductDependencies = (
+				8BCD9C65259E2D7F0057B449 /* SnapKit */,
+			);
+			productName = BallTrackerMacOS;
+			productReference = 8BCD9C32259E2D2A0057B449 /* BallTrackerMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BCD9C43259E2D2D0057B449 /* BallTrackerMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCD9C5B259E2D2D0057B449 /* Build configuration list for PBXNativeTarget "BallTrackerMacOSTests" */;
+			buildPhases = (
+				8BCD9C40259E2D2D0057B449 /* Sources */,
+				8BCD9C41259E2D2D0057B449 /* Frameworks */,
+				8BCD9C42259E2D2D0057B449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCD9C46259E2D2D0057B449 /* PBXTargetDependency */,
+			);
+			name = BallTrackerMacOSTests;
+			productName = BallTrackerMacOSTests;
+			productReference = 8BCD9C44259E2D2D0057B449 /* BallTrackerMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BCD9C4E259E2D2D0057B449 /* BallTrackerMacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCD9C5E259E2D2D0057B449 /* Build configuration list for PBXNativeTarget "BallTrackerMacOSUITests" */;
+			buildPhases = (
+				8BCD9C4B259E2D2D0057B449 /* Sources */,
+				8BCD9C4C259E2D2D0057B449 /* Frameworks */,
+				8BCD9C4D259E2D2D0057B449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCD9C51259E2D2D0057B449 /* PBXTargetDependency */,
+			);
+			name = BallTrackerMacOSUITests;
+			productName = BallTrackerMacOSUITests;
+			productReference = 8BCD9C4F259E2D2D0057B449 /* BallTrackerMacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BCD9C2A259E2D2A0057B449 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					8BCD9C31259E2D2A0057B449 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					8BCD9C43259E2D2D0057B449 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8BCD9C31259E2D2A0057B449;
+					};
+					8BCD9C4E259E2D2D0057B449 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8BCD9C31259E2D2A0057B449;
+					};
+				};
+			};
+			buildConfigurationList = 8BCD9C2D259E2D2A0057B449 /* Build configuration list for PBXProject "BallTrackerMacOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BCD9C29259E2D2A0057B449;
+			packageReferences = (
+				8BCD9C64259E2D7F0057B449 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 8BCD9C33259E2D2A0057B449 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BCD9C31259E2D2A0057B449 /* BallTrackerMacOS */,
+				8BCD9C43259E2D2D0057B449 /* BallTrackerMacOSTests */,
+				8BCD9C4E259E2D2D0057B449 /* BallTrackerMacOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BCD9C30259E2D2A0057B449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCD9C3A259E2D2C0057B449 /* Assets.xcassets in Resources */,
+				8BCD9C3D259E2D2C0057B449 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCD9C42259E2D2D0057B449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCD9C4D259E2D2D0057B449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BCD9C2E259E2D2A0057B449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCD9C6B259E30060057B449 /* VisionObjectRecognitionViewController.swift in Sources */,
+				8BCD9C38259E2D2A0057B449 /* ViewController.swift in Sources */,
+				8BC0BEA625A1E27C007A8D4C /* TennisBallDetector.mlmodel in Sources */,
+				8BCD9C36259E2D2A0057B449 /* AppDelegate.swift in Sources */,
+				8B98B5E925A48E2800F3AA86 /* ParabolaCalculations.swift in Sources */,
+				8B6EBECE25A5D2B800CC9506 /* LayerDrawingFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCD9C40259E2D2D0057B449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCD9C49259E2D2D0057B449 /* BallTrackerMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCD9C4B259E2D2D0057B449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCD9C54259E2D2D0057B449 /* BallTrackerMacOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BCD9C46259E2D2D0057B449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BCD9C31259E2D2A0057B449 /* BallTrackerMacOS */;
+			targetProxy = 8BCD9C45259E2D2D0057B449 /* PBXContainerItemProxy */;
+		};
+		8BCD9C51259E2D2D0057B449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BCD9C31259E2D2A0057B449 /* BallTrackerMacOS */;
+			targetProxy = 8BCD9C50259E2D2D0057B449 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BCD9C3B259E2D2C0057B449 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BCD9C3C259E2D2C0057B449 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BCD9C56259E2D2D0057B449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BCD9C57259E2D2D0057B449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8BCD9C59259E2D2D0057B449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BallTrackerMacOS/BallTrackerMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8D5R3DJUXM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BallTrackerMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abmgrt.BallTrackerMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8BCD9C5A259E2D2D0057B449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BallTrackerMacOS/BallTrackerMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8D5R3DJUXM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BallTrackerMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abmgrt.BallTrackerMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8BCD9C5C259E2D2D0057B449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8D5R3DJUXM;
+				INFOPLIST_FILE = BallTrackerMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abmgrt.BallTrackerMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BallTrackerMacOS.app/Contents/MacOS/BallTrackerMacOS";
+			};
+			name = Debug;
+		};
+		8BCD9C5D259E2D2D0057B449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8D5R3DJUXM;
+				INFOPLIST_FILE = BallTrackerMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abmgrt.BallTrackerMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BallTrackerMacOS.app/Contents/MacOS/BallTrackerMacOS";
+			};
+			name = Release;
+		};
+		8BCD9C5F259E2D2D0057B449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8D5R3DJUXM;
+				INFOPLIST_FILE = BallTrackerMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abmgrt.BallTrackerMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BallTrackerMacOS;
+			};
+			name = Debug;
+		};
+		8BCD9C60259E2D2D0057B449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8D5R3DJUXM;
+				INFOPLIST_FILE = BallTrackerMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abmgrt.BallTrackerMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BallTrackerMacOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BCD9C2D259E2D2A0057B449 /* Build configuration list for PBXProject "BallTrackerMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCD9C56259E2D2D0057B449 /* Debug */,
+				8BCD9C57259E2D2D0057B449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCD9C58259E2D2D0057B449 /* Build configuration list for PBXNativeTarget "BallTrackerMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCD9C59259E2D2D0057B449 /* Debug */,
+				8BCD9C5A259E2D2D0057B449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCD9C5B259E2D2D0057B449 /* Build configuration list for PBXNativeTarget "BallTrackerMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCD9C5C259E2D2D0057B449 /* Debug */,
+				8BCD9C5D259E2D2D0057B449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCD9C5E259E2D2D0057B449 /* Build configuration list for PBXNativeTarget "BallTrackerMacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCD9C5F259E2D2D0057B449 /* Debug */,
+				8BCD9C60259E2D2D0057B449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BCD9C64259E2D7F0057B449 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BCD9C65259E2D7F0057B449 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BCD9C64259E2D7F0057B449 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8BCD9C2A259E2D2A0057B449 /* Project object */;
+}
